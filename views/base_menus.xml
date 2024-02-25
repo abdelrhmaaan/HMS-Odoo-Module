@@ -1,0 +1,12 @@
+<odoo>
+
+    <menuitem id="main_menu_root"
+              name="HOS"
+              web_icon="hos_app,static/description/icon.png"/>
+    <menuitem id="menu_hms_patients" name="Patients" parent="main_menu_root" />
+    <menuitem id="menu_hms_doctors" name="Doctors" parent="main_menu_root"  />
+    <menuitem id="menu_department_tree" name="Hospital Departments" parent="main_menu_root"/>
+    <menuitem id="menu_patient_log_history" name="Patient Log History" parent="main_menu_root"/>
+
+
+</odoo>

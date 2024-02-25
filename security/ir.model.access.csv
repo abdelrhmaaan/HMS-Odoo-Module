@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_patient_rights,access_patient_rights,model_hos_patient,,1,1,1,1
+access_doctor_rights,access_doctor_rights,model_hos_doctor,,1,1,1,1
+access_loghistory_rights,access_loghistory_rights,model_hos_loghistory,,1,1,1,1
+access_department_rights,access_department_rights,model_hos_department,,1,1,1,1
+

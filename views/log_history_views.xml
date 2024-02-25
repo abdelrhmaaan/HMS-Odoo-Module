@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_patient_log_history_tree" model="ir.ui.view">
+        <field name="name">patient.log.history.tree</field>
+        <field name="model">hos.loghistory</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="created_by"/>
+                <field name="date"/>
+                <field name="patient_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_patient_log_history_form" model="ir.ui.view">
+        <field name="name">patient.log.history.form</field>
+        <field name="model">hos.loghistory</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="created_by"/>
+                        <field name="date"/>
+                        <field name="description"/>
+                        <field name="patient_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for Tree View -->
+    <record id="action_patient_log_history_tree" model="ir.actions.act_window">
+        <field name="name">Patient Log History</field>
+        <field name="res_model">hos.loghistory</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu for Patient Log History -->
+    <menuitem id="menu_patient_log_history_tree" name="Patient Log History" parent="menu_patient_log_history" action="action_patient_log_history_tree"/>
+</odoo>
